@@ -21,6 +21,23 @@ def date_():
 	speak(month)
 	speak(year)
 
-date_()
+def wishme():
+	speak("Welcome back Dennis!")
+	time_()
+	date_()
+
+	hour=dt.now().hour
+
+	if hour>=6 and hour<12:
+		speak("Good morning Sir!")
+	elif hour>=12 and hour<18:
+		speak("Good Afternoon Sir!")
+	elif hour>=18 and hour<24:
+		speak("Good evening Sir!")
+	else:
+		speak("Good night Sir!")
+
+	speak("Jarvis at your service. Please  tell me how can I help you today?")
 
 
+wishme()
