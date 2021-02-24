@@ -61,5 +61,16 @@ def TakeCommand():
 
 	return query	
 
-# wishme()
-TakeCommand()
+if __name__ == "__main__":
+
+	wishme()
+
+	while True:
+
+		query=TakeCommand().lower()
+
+		if "time" in query:
+			time_()
+		
+		if "date" in query:
+			date_()
