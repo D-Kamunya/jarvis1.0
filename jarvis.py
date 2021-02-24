@@ -2,6 +2,8 @@ import pyttsx3 # pip install pyttsx3
 from datetime import datetime as dt
 import speech_recognition as sr
 
+import wikipedia # pip install wikipedia
+
 engine = pyttsx3.init() # Initialize pyttsx3
 
 def speak(audio):
